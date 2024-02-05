@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Descrição curta e relevante do seu site"
+    />
+    <meta
+      name="keywords"
+      content="Decodificador de texto,Criptografia de texto,Descriptografia online,Ferramenta de decifragem,Mensagens secretas,Cifra de substituição,Segredo de mensagens,Codificador de texto,Descodificador de mensagens, Criptografia simples,Ferramenta de cifragem,Código secreto,Mensagens cifradas Compartilhamento de segredos,Decodificar mensagens ocultas"
+    />
+    <meta name="author" content="LucDev001" />
+    <link rel="icon" href="img/criptografia-de-dados.ico" type="image" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Bit - Decodificador</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <a href="https://www.linkedin.com/" target="_blank">
+        <img
+          src="img/linkedin_icon.png"
+          alt=""
+          title="Linkedin icons created by Hight Quality Icons - Flaticon"
+        />Linkedin</a
+      >
+      <a href="https://github.com/" target="_blank">
+        <img src="img/github-logo.png" alt="" /> GitHub</a
+      >
+    </header>
+
+    <main class="container">
+      <div class="container__texto">
+        <textarea
+          name="texto"
+          id="text"
+          placeholder="Digite Seu texto..."
+        ></textarea>
+
+        <div class="container__texto__aviso">
+          <img src="img/logoobs.png" alt="" />
+          <p>Apenas letras minúsculas e sem acento.</p>
+        </div>
+
+        <div class="container__texto__buttons">
+          <button onclick="processText('encrypt')" id="btn__cripto">
+            Criptografar
+          </button>
+          <button onclick="processText('decrypt')" id="btn__descripto">
+            Descriptografar
+          </button>
+        </div>
+      </div>
+      <!--container__texto-->
+
+      <div class="container__resultado">
+        <img src="img/criptografia.png" alt="" />
+        <div class="container__resultado__text">
+          <h3 id="resultTitle">Nenhuma mensagem <br />encontrada</h3>
+          <p id="resultText">
+            Digite um texto que você deseja criptografar ou descriptografar.
+          </p>
+        </div>
+        <button onclick="copyToClipboard()" id="btn__copy">Copiar Texto</button>
+      </div>
+      <!--container__resultado-->
+    </main>
+    <!--container-->
+
+    <footer>
+      <h1>Desenvolvido Por Luciano</h1>
+
+      <div>
+        <hr />
+        <img src="img/html-5.png" alt="" />
+        <img src="img/css-3.png" alt="" />
+        <img src="img/script-java.png" alt="" />
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

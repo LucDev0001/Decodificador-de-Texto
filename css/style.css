@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+:root {
+  --cortexto--: white;
+  --corbotoes--: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #00bf8f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #001510,
+    #00bf8f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #001510,
+    #00bf8f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image:url(../img/BG_ONE_ZOOM_PT_\(3\)[1].png);
+  background-size: cover;
+  font-family: "Inter", "sans-serif";
+  box-sizing: border-box;
+  background-color: #e5e5e5;
+  height: 100vh;
+  color: var(--cortexto--);
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00bf8f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #001510,
+    #00bf8f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #001510,
+    #00bf8f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.cabecalho {
+  display: flex;
+  padding: 1%;
+  width: 50%;
+}
+
+.cabecalho img {
+  width: 30px;
+  box-shadow: 0 8px 32px 0 rgba(17, 216, 187, 1);
+  border: none;
+  border-radius: 50px;
+}
+
+.cabecalho a {
+  display: flex;
+  justify-content: space-around;
+  margin: 2px;
+  font-size: 1rem;
+  text-decoration: none;
+  width: 9em;
+  color: var(--cortexto--);
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 1rem;
+}
+
+::placeholder {
+  color: var(--cortexto--);
+  font-size: 1rem;
+}
+
+.container__texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.container > img {
+  display: none;
+}
+
+.container__texto > textarea {
+  top: -60px;
+  background-color: transparent;
+  width:80vh;
+  height: 300px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  resize: none;
+  font-size: 1.5rem;
+  padding: 1%;
+  color: white;
+}
+
+.container__texto__aviso {
+  font-size: 0.75rem;
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+  width: 319px;
+}
+
+.container__texto__buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 22px;
+}
+
+button {
+  cursor: pointer;
+  width: 40%;
+  height: 30px;
+  background: var(--corbotoes--);
+  border: none;
+  border-radius: 24px;
+}
+
+.container__resultado {
+  position: relative;
+  top: -15px;
+  width: 25%;
+  height:60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1%;
+  margin: 20px;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 8px 32px 0 rgba(17, 216, 187, 0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.container__resultado > img {
+  width: 30%;
+  height: auto;
+}
+
+.container__resultado img:hover {
+  transform: rotateY(180deg);
+}
+
+.container__resultado__text h3 {
+  color: var(--cortexto--);
+  font-size: 1rem;
+}
+
+.container__resultado__text {
+width: 90%;
+text-align: center;
+color: white;
+font-size:1.5vh;
+
+}
+
+
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-around;
+  text-align: center;
+  background-color: transparent;
+  font-size: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  body {
+    overflow: auto;
+  }
+
+  .overlay img {
+    width: 50%;
+  }
+
+  .cabecalho {
+    flex-direction: row;
+    width: 80%;
+    text-align: center;
+    padding: 10%;
+  }
+
+  .cabecalho__logo {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .container__texto {
+    width: 90%;
+    height: 35vh;
+    align-items: center;
+  }
+
+  .container__texto__buttons {
+    width: 90%;
+  }
+
+  .container__resultado {
+
+    align-items: center;
+    width: 90%;
+    top: 5px;
+    height: 60vh;
+    background: transparent;
+    backdrop-filter: none;
+  }
+
+  .container__resultado img{
+    width:50%;
+    
+  }
+}
