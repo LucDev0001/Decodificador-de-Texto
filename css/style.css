@@ -23,7 +23,7 @@ body {
     #00bf8f
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-image:url(../img/BG_ONE_ZOOM_PT_\(3\)[1].png);
-  background-size:100% 100% ; 
+  background-size:cover; 
   font-family: "Inter", "sans-serif";
   box-sizing: border-box;
   background-color: #e5e5e5;
