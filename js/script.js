@@ -1,13 +1,15 @@
 
 //PROCESSAMENTO DO TEXTO
 function processText(operation) {
-  var inputText = document.getElementById("text").value.toLowerCase();
+  var inputText = document.getElementById("text").value;
+// Verifica se o texto contém caracteres que não são letras minúsculas
+if (/[^a-z\s]/.test(inputText)) {
+  alert("Por favor, insira apenas letras minúsculas.");
+  return;
+}
 
-  // Verifica se o texto contém letras maiúsculas ou acentos
-  if (/[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(inputText)) {
-    alert("Por favor, insira apenas letras minúsculas e sem acentos.");
-    return;
-  }
+// Se chegou até aqui, o texto está válido
+console.log("Texto válido:", inputText);
 
   var resultTitle = document.getElementById("resultTitle");
   var resultText = document.getElementById("resultText");
